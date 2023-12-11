@@ -39,19 +39,30 @@ const questions = [
 
 // TODO: Create a function to write README file
 function writeToFile(data) {
-    console.log(data);
+  console.log(data);
 
-    // compose Main String
-    let mainStr = "";
-    mainStr += "# " + data.title + "\n\n";
+  // compose Main String
+  let mainStr = "";
+  
+  // set Title
+  mainStr += "# " + data.title + "\n\n";
+
+  // Description
+  if (data.description.length > 0) {
     mainStr += "## Description\n\n" + data.description + "\n\n";
+  }
 
-    console.log(mainStr);
-    fs.writeFile('../../README.md', mainStr, (err) => {
-      if (err) {
-        console.error(err);
-      }
-    });
+  // Instructions
+  if (data.instructions.length > 0) {
+    mainStr += "## Instructions\n\n" + data.instructions + "\n\n";
+  }
+
+  console.log(mainStr);
+  fs.writeFile('../../README.md', mainStr, (err) => {
+    if (err) {
+      console.error(err);
+    }
+  });
 }
 
 // TODO: Create a function to initialize app
