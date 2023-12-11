@@ -57,6 +57,21 @@ function writeToFile(data) {
     mainStr += "## Instructions\n\n" + data.instructions + "\n\n";
   }
 
+  // Usage Info
+  if (data.usageInfo.length > 0) {
+    mainStr += "## Usage Information\n\n" + data.usageInfo + "\n\n";
+  }
+
+  // Guidelines
+  if (data.guidelines.length > 0) {
+    mainStr += "## Guidelines\n\n" + data.guidelines + "\n\n";
+  }
+
+  // Testing
+  if (data.testing.length > 0) {
+    mainStr += "## Testing\n\n" + data.testing + "\n\n";
+  }
+
   console.log(mainStr);
   fs.writeFile('../../README.md', mainStr, (err) => {
     if (err) {
