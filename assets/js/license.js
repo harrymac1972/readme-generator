@@ -906,7 +906,7 @@ const licenseObj = {
     SOFTWARE.`
     },
     "Boost Software License 1.0": {
-        "badge": "![Boost Software License 1.0](https://img.shields.io/badge/License-Boostv1-blue)",
+        "badge": "![Boost Software License 1.0](https://img.shields.io/badge/License-BoostV1-blue)",
         "text": `Boost Software License - Version 1.0 - August 17th, 2003
 
         Permission is hereby granted, free of charge, to any person or organization
@@ -2103,7 +2103,7 @@ Ty Coon, President of Vice
 That's all there is to it!`
     },
     "Mozilla Public License 2.0": {
-        "badge": "",
+        "badge": "![Mozilla Public License 2.0](https://img.shields.io/badge/License-MozillaV2-blue)",
         "text": `Mozilla Public License Version 2.0
         ==================================
         
