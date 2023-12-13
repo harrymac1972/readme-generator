@@ -1,6 +1,8 @@
 
 const licenseObj = {
-        "Apache License 2.0": `                                 Apache License
+    "Apache License 2.0": {
+        "badge": "",
+        "text" : `                                 Apache License
         Version 2.0, January 2004
     http://www.apache.org/licenses/
 
@@ -200,9 +202,11 @@ const licenseObj = {
     distributed under the License is distributed on an "AS IS" BASIS,
     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
     See the License for the specific language governing permissions and
-    limitations under the License.`,
-
-        "GNU General Public License v3.0":`                    GNU GENERAL PUBLIC LICENSE
+    limitations under the License.`
+    },
+    "GNU General Public License v3.0": {
+        "badge": "",
+        "text": `                    GNU GENERAL PUBLIC LICENSE
         Version 3, 29 June 2007
 
     Copyright (C) 2007 Free Software Foundation, Inc. <https://fsf.org/>
@@ -875,9 +879,11 @@ const licenseObj = {
     may consider it more useful to permit linking proprietary applications with
     the library.  If this is what you want to do, use the GNU Lesser General
     Public License instead of this License.  But first, please read
-    <https://www.gnu.org/licenses/why-not-lgpl.html>.`,
-
-    "MIT License": `MIT License
+    <https://www.gnu.org/licenses/why-not-lgpl.html>.`
+    },
+    "MIT License": {
+        "badge": "",
+        "text": `MIT License
 
     Copyright (c) [year] [fullname]
     
@@ -897,7 +903,8 @@ const licenseObj = {
     AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
     LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
     OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-    SOFTWARE.`,
+    SOFTWARE.`
+    },
 }
 
 module.exports = licenseObj;

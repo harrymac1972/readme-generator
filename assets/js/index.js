@@ -98,7 +98,7 @@ function writeToFile(data) {
     mainStr += "## License\n\n";
     mainStr += data.license;
     mainStr += "\n\n Please read full license at 'LICENSE.txt' in this project";
-    fs.writeFile('../../LICENSE.txt',licenseObj[data.license], (err) => {
+    fs.writeFile('../../LICENSE.txt',licenseObj[data.license]["text"], (err) => {
       if (err) {
         console.error(err);
       }
