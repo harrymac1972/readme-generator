@@ -1,6 +1,8 @@
 // TODO: Include packages needed for this application
 const inquirer = require('inquirer');
 const fs = require('fs');
+const licenseObj = require('./license');
+
 
 // TODO: Create an array of questions for user input
 // test instructions
@@ -93,10 +95,10 @@ function writeToFile(data) {
 
   // License
   if (data.license.length > 0) {
-    mainStr += "## License\n\n" + data.license + "\n\n"
+    mainStr += "## License\n\n";
+    mainStr += licenseObj[data.license];
   }
 
-  console.log(mainStr);
   fs.writeFile('../../README.md', mainStr, (err) => {
     if (err) {
       console.error(err);
