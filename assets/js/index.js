@@ -101,7 +101,7 @@ function writeToFile(data) {
   }
 
   const baseStr = licenseBadgeStr + mainStr;
-  fs.writeFile('../../README.md', baseStr, (err) => {
+  fs.writeFile('../../READMEgenerated.md', baseStr, (err) => {
     if (err) {
       console.error(err);
     }
