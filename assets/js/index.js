@@ -54,7 +54,7 @@ const questions = [
 ];
 
 // TODO: Create a function to write README file
-function writeToFile(data) {
+function createFile(data) {
 
   // compose Main String
   let mainStr = "";
@@ -99,21 +99,23 @@ function writeToFile(data) {
       }
     });
   }
-
+  // Create actual file
   const baseStr = licenseBadgeStr + mainStr;
-  fs.writeFile('../../READMEgenerated.md', baseStr, (err) => {
+  fs.writeFile('../../output/outputREADME.md', baseStr, (err) => {
     if (err) {
       console.error(err);
     }
   });
 }
 
+// ===================================================
+
 // TODO: Create a function to initialize app
 function init() {
     inquirer
     .prompt(questions)
     .then((data) => {
-        writeToFile(data);
+        createFile(data);
     });
 }
 
