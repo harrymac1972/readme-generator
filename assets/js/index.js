@@ -96,6 +96,8 @@ function createFile(data) {
     fs.writeFile('../../LICENSE.txt',licenseObj[data.license]["text"], (err) => {
       if (err) {
         console.error(err);
+      } else {
+        console.log("\noutputREADME.md created in 'output' folder.")
       }
     });
   }
