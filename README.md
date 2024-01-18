@@ -1,3 +1,21 @@
-# Professional README Generator Starter Code
+![Mozilla Public License 2.0](https://img.shields.io/badge/License-MozillaV2-blue)
 
-[How to create a Professional README](https://coding-boot-camp.github.io/full-stack/github/professional-readme-guide)
+# ReadMe Generator
+
+## Description
+
+Use Node Inquirer library to make a README.md file
+
+## Instructions
+
+Click the Link
+
+## Usage Information
+
+Execute 'node index' in CLI to begin, answer all questions truthfully!
+
+## Guidelines
+
+
+## License
+
