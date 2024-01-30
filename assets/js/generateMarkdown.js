@@ -57,7 +57,7 @@ function generateMarkdown(data) {
     mainStr += data.license;
     mainStr += "\n\n Please read full license at 'LICENSE.txt' in this project";
     licenseBadgeStr = renderLicenseBadge(data.license);
-    fs.writeFile('../../LICENSE.txt',licenseObj[data.license]["text"], (err) => {
+    fs.writeFile('LICENSE.txt',licenseObj[data.license]["text"], (err) => {
       if (err) {
         console.error(err);
       } else {
