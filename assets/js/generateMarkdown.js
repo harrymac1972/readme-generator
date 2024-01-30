@@ -9,7 +9,9 @@ function renderLicenseBadge(license) {
 }
 
 // TODO: Create a function that returns the license link
-function renderLicenseLink(license) {}
+function renderLicenseLink(license) {
+  return "\n\n" + licenseObj[license]["link"]
+}
 
 // TODO: Create a function that returns the license section of README
 function renderLicenseSection(license) {
@@ -61,7 +63,8 @@ function generateMarkdown(data) {
   if (data.license.length > 0) {
     mainStr += "## License\n\n";
     mainStr += data.license;
-    mainStr += "\n\n Please read full license at 'LICENSE.txt' in this project";
+    mainStr += renderLicenseLink(data.license);
+    mainStr += "\n\nPlease read full license at 'LICENSE.txt' in this project";
     licenseBadgeStr = renderLicenseBadge(data.license);
     renderLicenseSection(data.license);
   }
