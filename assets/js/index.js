@@ -2,8 +2,6 @@
 
 const generateMarkdown = require('./generateMarkdown');
 const inquirer = require('inquirer');
-// const licenseObj = require('./license');
-var licenseBadgeStr = "";
 
 // TODO: Create an array of questions for user input
 // test instructions

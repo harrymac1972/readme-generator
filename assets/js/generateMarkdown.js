@@ -1,11 +1,12 @@
 
 const licenseObj = require('./license');
 const fs = require('fs');
+var licenseBadgeStr = "";
 
 // TODO: Create a function that returns a license badge based on which license is passed in
 // If there is no license, return an empty string
 function renderLicenseBadge(license) {  
-  return licenseObj[data.license]["badge"] + "\n\n";
+  return licenseObj[license]["badge"] + "\n\n";
 }
 
 // TODO: Create a function that returns the license link
@@ -55,7 +56,7 @@ function generateMarkdown(data) {
     mainStr += "## License\n\n";
     mainStr += data.license;
     mainStr += "\n\n Please read full license at 'LICENSE.txt' in this project";
-    licenseBadgeStr = licenseObj[data.license]["badge"] + "\n\n";
+    licenseBadgeStr = renderLicenseBadge(data.license);
     fs.writeFile('../../LICENSE.txt',licenseObj[data.license]["text"], (err) => {
       if (err) {
         console.error(err);
