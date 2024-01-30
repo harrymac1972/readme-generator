@@ -60,7 +60,8 @@ function createFile(data) {
 // ===================================================
 
 // TODO: Create a function to initialize app
-function init() {
+function init() {    
+    console.log("\n");
     inquirer
     .prompt(questions)
     .then((data) => {
