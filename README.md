@@ -2,7 +2,7 @@
 
 ## Description
 
-The intent of this project is to have a Node's Inquirer library create a README file.
+The intent of this project is to have the Node Inquirer library create a README file.
 
 It also demonstrated the mechanism of importing other javascript files.  These then can employ variables or methods from it.  Effectively creating one's own library or module.
 
@@ -16,6 +16,8 @@ Git Bash - <code><strong>git clone git@github.com:harrymac1972/readme-generator.
 
 Inside your Bash CLI run 'node/assets/js/index.js' to begin the Inquirer's questions.
 Answer all prompts truthfully for best results!
+
+VIDEO LINK:   https://drive.google.com/file/d/1eggSJWUCXuict-ElFDy9fgqvKMzLiKIC/view
 
 ## Usage
 
