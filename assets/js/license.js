@@ -1,6 +1,7 @@
 
 const licenseObj = {
     "Apache License 2.0": {
+        "link": "https://www.apache.org/licenses/LICENSE-2.0",
         "badge": "![Apache 2.0 license](https://img.shields.io/badge/License-ApacheV2-blue)",
         "text" : `                                 Apache License
         Version 2.0, January 2004
@@ -205,6 +206,7 @@ const licenseObj = {
     limitations under the License.`
     },
     "GNU General Public License v3.0": {
+        "link": "https://perso.crans.org/besson/LICENSE.html",
         "badge": "[![GPLv3 license](https://img.shields.io/badge/License-GPLv3-blue.svg)](http://perso.crans.org/besson/LICENSE.html)",
         "text": `                    GNU GENERAL PUBLIC LICENSE
         Version 3, 29 June 2007
@@ -882,6 +884,7 @@ const licenseObj = {
     <https://www.gnu.org/licenses/why-not-lgpl.html>.`
     },
     "MIT License": {
+        "link": "https://lbesson.mit-license.org/",
         "badge": "[![MIT license](https://img.shields.io/badge/License-MIT-blue.svg)](https://lbesson.mit-license.org/)",
         "text": `MIT License
 
@@ -906,6 +909,7 @@ const licenseObj = {
     SOFTWARE.`
     },
     "Boost Software License 1.0": {
+        "link": "https://www.boost.org/LICENSE_1_0.txt",
         "badge": "![Boost Software License 1.0](https://img.shields.io/badge/License-BoostV1-blue)",
         "text": `Boost Software License - Version 1.0 - August 17th, 2003
 
@@ -932,6 +936,7 @@ const licenseObj = {
         DEALINGS IN THE SOFTWARE.`
     },
     "GNU Affero General Public License v3.0": {
+        "link": "http://perso.crans.org/besson/LICENSE.html",
         "badge": "[![GPL license](https://img.shields.io/badge/License-AGPLv3-blue.svg)](http://perso.crans.org/besson/LICENSE.html)",
         "text": `                    GNU AFFERO GENERAL PUBLIC LICENSE
         Version 3, 19 November 2007
@@ -1596,6 +1601,7 @@ For more information on this, and how to apply and follow the GNU AGPL, see
 <https://www.gnu.org/licenses/>.`
     },
     "GNU Lesser General Public License v2.1": {
+        "link": "http://perso.crans.org/besson/LICENSE.html",
         "badge": "[![GPL license](https://img.shields.io/badge/License-LGPLv2-blue.svg)](http://perso.crans.org/besson/LICENSE.html)",
         "text": `                  GNU LESSER GENERAL PUBLIC LICENSE
         Version 2.1, February 1999
@@ -2103,6 +2109,7 @@ Ty Coon, President of Vice
 That's all there is to it!`
     },
     "Mozilla Public License 2.0": {
+        "link": "https://www.mozilla.org/en-US/MPL/2.0/",
         "badge": "![Mozilla Public License 2.0](https://img.shields.io/badge/License-MozillaV2-blue)",
         "text": `Mozilla Public License Version 2.0
         ==================================
@@ -2479,6 +2486,7 @@ That's all there is to it!`
           defined by the Mozilla Public License, v. 2.0.`
     },
     "The Unlicense": {
+        "link": "https://unlicense.org/",
         "badge": "[![Unlicense](https://img.shields.io/badge/License-Unlicense-blue.svg)](https://unlicense.org/)",
         "text": `This is free and unencumbered software released into the public domain.
 
