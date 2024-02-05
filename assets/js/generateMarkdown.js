@@ -31,8 +31,19 @@ function generateMarkdown(data) {
   // compose Main String
   let mainStr = "";
   
+  // place Table of Contents
+
+  mainStr += `# Table of Contents
+  - [Description](#description)
+  - [Instructions](#instructions)
+  - [Usage Information](#usage-information)
+  - [Guidelines](#guidelines)
+  - [Testing](#testing)
+  - [License](#license)
+  - [Questions](#questions)`
+
   // set Title
-  mainStr += "# " + data.title + "\n\n";
+  mainStr += "\n\n# " + data.title + "\n\n";
 
   // Description
   if (data.description.length > 0) {
