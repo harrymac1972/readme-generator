@@ -69,6 +69,18 @@ function generateMarkdown(data) {
     renderLicenseSection(data.license);
   }
 
+  // Questions
+  if (data.github.length > 0 || data.email.length > 0) {
+    mainStr += "\n\n## Questions\n\n";
+    if (data.github.length > 0) {
+      mainStr += "https://github.com/"
+      mainStr += data.github;
+    }
+    if (data.email.length > 0) {
+    }
+    mainStr += `\n\nPlease email me at ${data.email} for any questions at all`;
+  }
+
   // Create actual file
   const baseStr = licenseBadgeStr + mainStr;
   fs.writeFile('output/outputREADME.md', baseStr, (err) => {

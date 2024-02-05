@@ -50,6 +50,16 @@ const questions = [
                 'The Unlicense'
       ],
     },
+    {
+      type: 'input',
+      name: 'github',
+      message: 'Your Github Username?',
+    },
+    {
+      type: 'input',
+      name: 'email',
+      message: 'Your Email Address?',
+    },
 ];
 
 // TODO: Create a function to write README file
